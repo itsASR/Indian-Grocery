@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+
+*{
+  /* color: green; */
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+
+.bree-serif-regular {
+  font-family: "Bree Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.style-script-regular {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.new-bg {
+  background-color: #D9D9D9
+}
+
+.span-style {
+  @apply text-3xl font-extrabold
+}
+
+.list-style {
+  @apply list-disc px-11
+}
+
+.Menu-head {
+  @apply py-11 h-44
+}
+
+.r-70 {
+  transform: rotate(-70deg);
+}
+
+.w90 {
+
+  opacity: 0.5;
+  height: 90%;
+
+}
+
+.ss {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  width: 100vw;
+}
+
+.op {
+  opacity: 0.8;
+}
+
+.try {
+  
+  background: url(mobilebg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.trans{
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+
+@tailwind utilities;

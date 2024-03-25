@@ -1,0 +1,95 @@
+{
+    "categories": [
+      {
+        "name": "Grains",
+        "category_image_url": "https://picsum.photos/200",
+        "products": [
+          {
+            "id": 1,
+            "name": "Rice",
+            "price": 50,
+            "image_url": "https://source.unsplash.com/collection/190727"
+          },
+          {
+            "id": 2,
+            "name": "Basmati Rice",
+            "price": 80,
+            "image_url": "https://source.unsplash.com/collection/190727"
+          }
+        ]
+      },
+      {
+        "name": "Pulses",
+        "category_image_url": "https://picsum.photos/200",
+        "products": [
+          {
+            "id": 21,
+            "name": "Lentils",
+            "price": 70,
+            "image_url": "https://source.unsplash.com/collection/190727"
+          },
+          {
+            "id": 22,
+            "name": "Chickpeas",
+            "price": 60,
+            "image_url": "https://source.unsplash.com/collection/190727"
+          }
+        ]
+      },
+      {
+        "name": "Cooking Oil",
+        "category_image_url": "https://picsum.photos/200",
+        "products": [
+          {
+            "id": 31,
+            "name": "Mustard Oil",
+            "price": 130,
+            "image_url": "https://source.unsplash.com/collection/190727"
+          },
+          {
+            "id": 32,
+            "name": "Sunflower Oil",
+            "price": 150,
+            "image_url": "https://source.unsplash.com/collection/190727"
+          }
+        ]
+      },
+      {
+        "name": "Flour",
+        "category_image_url": "https://picsum.photos/200",
+        "products": [
+          {
+            "id": 41,
+            "name": "Wheat Flour",
+            "price": 40,
+            "image_url": "https://source.unsplash.com/collection/190727"
+          },
+          {
+            "id": 42,
+            "name": "Ragi Flour",
+            "price": 45,
+            "image_url": "https://source.unsplash.com/collection/190727"
+          }
+        ]
+      },
+      {
+        "name": "Spices",
+        "category_image_url": "https://picsum.photos/400",
+        "products": [
+          {
+            "id": 51,
+            "name": "Turmeric Powder",
+            "price": 20,
+            "image_url": "https://source.unsplash.com/collection/190727"
+          },
+          {
+            "id": 52,
+            "name": "Cumin Powder",
+            "price": 25,
+            "image_url": "https://source.unsplash.com/collection/190727"
+          }
+        ]
+      }
+    ]
+  }
+  
