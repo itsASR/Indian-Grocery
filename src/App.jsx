@@ -27,27 +27,35 @@ function App() {
   const [suggestedproduct, setsuggestedproduct] = useState([])
   const [cartdata, setcartdata] = useState([])
   const [btn, setbtn] = useState([0])
-  const [totalorder , settotalorder] = ([0])
-  const [address , setaddress] = useState('')
-  const [address2 , setaddress2] = useState('000000')
-  const [addressbar , setaddressbar] = useState("block")
-  
+  const [totalorder, settotalorder] = ([0])
+  const [address, setaddress] = useState('')
+  const [address2, setaddress2] = useState('000000')
+  const [addressbar, setaddressbar] = useState("block")
+
 
 
 
   useEffect(() => {
-    axios.get("../server/categories.json")
-      .then((result) => {setproductkadata(result.data.categories) 
-      setsuggestedproduct(result.data.categories)}
-      )
-      .catch((err) => console.log(err));
+    const datas = async () => {
+      try {const res = await axios.get("../server/categories.json")
+      {
+        setproductkadata(res.data.categories)
+        setsuggestedproduct(res.data.categories)
+      }
+        
+      } catch (error) {
+        console.log("this is error abhishek",error);
+      }
+
+    }
+    datas()
   }, [])
 
 
   return (
     <>
 
-      <webdata.Provider value={{addressbar , setaddressbar,address2 , setaddress2,address , setaddress,popup, setpopup,totalorder , settotalorder,btn, setbtn , productkadata, setproductkadata, suggestedproduct, setsuggestedproduct,cartdata, setcartdata , warning, setWarning}}>
+      <webdata.Provider value={{ addressbar, setaddressbar, address2, setaddress2, address, setaddress, popup, setpopup, totalorder, settotalorder, btn, setbtn, productkadata, setproductkadata, suggestedproduct, setsuggestedproduct, cartdata, setcartdata, warning, setWarning }}>
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Homepage></Homepage>}></Route>
