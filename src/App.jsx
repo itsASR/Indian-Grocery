@@ -37,14 +37,15 @@ function App() {
 
   useEffect(() => {
     const datas = async () => {
-      try {const res = await axios.get("../server/categories.json")
+      try {const res = await axios.get("/server/categories.json")
+    
       {
         setproductkadata(res.data.categories)
         setsuggestedproduct(res.data.categories)
       }
         
       } catch (error) {
-        console.log("this is error abhishek",error);
+        console.log("this is error abhishek here ",error);
       }
 
     }
