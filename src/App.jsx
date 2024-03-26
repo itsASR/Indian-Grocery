@@ -37,7 +37,8 @@ function App() {
 
   useEffect(() => {
     const datas = async () => {
-      try {const res = await axios.get("/server/categories.json")
+      try {const res = await axios.get("src/categories.json")
+      
     
       {
         setproductkadata(res.data.categories)
@@ -45,7 +46,7 @@ function App() {
       }
         
       } catch (error) {
-        console.log("this is error abhishek here ",error);
+        console.log("this is error abhishek:  ",error);
       }
 
     }
