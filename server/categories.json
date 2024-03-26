@@ -2,7 +2,7 @@
     "categories": [
       {
         "name": "Grains",
-        "category_image_url": "src/Product images/Grains.jpg",
+        "category_image_url": "public/Product images/Grains.jpg",
         "products": [
           {
             "id": 1,
