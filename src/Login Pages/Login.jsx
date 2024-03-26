@@ -34,11 +34,11 @@ function Login() {
         <>
             <Header></Header>
 
-            <div className='h-screen pt-10 lg:flex lg:pt-6'>
+            <div className='h-screen pt-10 lg:flex lg:pt-6 '>
                 <div className="upperdiv w-screen xl:h-full">
                     <img src={backimg} className='h-full w-full'></img>
                 </div>
-                <div className="lowerdiv bg-white h-1/2 rounded-3xl -mt-5 relative bottom-20 md:bottom-0 lg:static lg:w-1/2">
+                <div className="lowerdiv bg-white h-1/2 rounded-3xl -mt-20 md:-mt-5 relative bottom-0 md:bottom-0 lg:static lg:w-1/2">
                     <h5 className='text-4xl text-blue-600 font-bold pt-5 pl-10 lg:text-center lg:text-4xl lg:pt-20'>Log in</h5>
                     <p className='pt-2 pl-10 lg:text-center lg:pt-4'>Now no more worrie about get lost.</p>
                     <form className='pt-5  text-center [&>*]:my-2  mx-auto' onSubmit={show}>
@@ -48,8 +48,10 @@ function Login() {
                         <input type='submit' value='Log in' className=' text-center bg-blue-600 py-3 rounded-2xl w-4/5 text-white md:w-4/5 md:ml-0' ></input>
                     </form>
                     <p className='text-black text-center pt-3'>Don't Have Any Account? <Link to='/register'><span className='text-blue-600'>Register Now</span></Link></p>
+                    <div className='py-12'>
+                        <Footer></Footer>
+                    </div>
                 </div>
-                <Footer></Footer>
             </div>
             
         </>

@@ -28,6 +28,9 @@ function App() {
   const [cartdata, setcartdata] = useState([])
   const [btn, setbtn] = useState([0])
   const [totalorder , settotalorder] = ([0])
+  const [address , setaddress] = useState('')
+  const [address2 , setaddress2] = useState('000000')
+  const [addressbar , setaddressbar] = useState("block")
   
 
 
@@ -44,7 +47,7 @@ function App() {
   return (
     <>
 
-      <webdata.Provider value={{popup, setpopup,totalorder , settotalorder,btn, setbtn , productkadata, setproductkadata, suggestedproduct, setsuggestedproduct,cartdata, setcartdata , warning, setWarning}}>
+      <webdata.Provider value={{addressbar , setaddressbar,address2 , setaddress2,address , setaddress,popup, setpopup,totalorder , settotalorder,btn, setbtn , productkadata, setproductkadata, suggestedproduct, setsuggestedproduct,cartdata, setcartdata , warning, setWarning}}>
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Homepage></Homepage>}></Route>

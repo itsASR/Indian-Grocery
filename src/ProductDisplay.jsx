@@ -65,8 +65,8 @@ function ProductDisplay() {
             <img src={ramu.image_url} alt="Product" className="w-full mb-4" />
             <div className="text-lg font-semibold mb-2">
               <p>{ramu.name}</p></div>
-            <div className="text-gray-600 mb-2">{ramu.price}</div>
-            <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onClick={()=>{handleclick(ramu)}} >Add to Cart bhai</button>
+            <div className="text-gray-600 mb-2">Price: {ramu.price}</div>
+            <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" onClick={()=>{handleclick(ramu)}} >Add to Cart</button>
           </div>
           })
         })

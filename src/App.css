@@ -71,3 +71,16 @@
     top: 80%;
     left: 40%;
 }
+
+/* 
+.upperdiv{
+    background-image: "bg-home";
+} */
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

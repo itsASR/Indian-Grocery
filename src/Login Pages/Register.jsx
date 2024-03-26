@@ -46,11 +46,13 @@ function Register() {
                         <input type='submit' value='Register' className=' text-center bg-blue-600 py-3 rounded-2xl w-4/5 text-white' ></input>
                     </form>
                     <p className='text-black text-center pt-3'>Already Have an Account? <Link to='/login'><span className='text-blue-600'>Log in</span></Link></p>
-                    {/* <Footer></Footer> */}
+                    <div className='py-12'>
+                        <Footer></Footer>
+                    </div>
                 </div>
 
             </div>
-            <Footer></Footer>
+            
 
         </>
     )
