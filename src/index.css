@@ -24,19 +24,19 @@
 }
 
 .new-bg {
-  background-color: #D9D9D9
+  background-color: #D9D9D9;
 }
 
 .span-style {
-  @apply text-3xl font-extrabold
+  @apply text-3xl font-extrabold;
 }
 
 .list-style {
-  @apply list-disc px-11
+  @apply list-disc px-11;
 }
 
 .Menu-head {
-  @apply py-11 h-44
+  @apply py-11 h-44;
 }
 
 .r-70 {
